@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundFly</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/texts.css">
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <!-- SCRIPTS  -->
+  </head>
+  <body>
+    <header>
+      <div class="logo__container">
+        <h1 class="title">Sound<span class="brand__Highlight title">Fly</span></h1>
+        <img class="logo__img" src="./src/assets/img/fly.svg" alt="fly" />
+      </div>
+      <button class="darkMode__button">
+        <img
+        class="darkMode__img darkMode__img--light"
+        src="./src/assets/img/dark_mode.svg" 
+        alt="light mode" 
+        />
+    </button>
+    </header>
+    <main class="mainContainer">
+      <section class="filters">
+        <div class="filters__container">
+          <h2>Gênero musical</h2>
+          <ul class="filters__list">
+          </ul>
+          <div class="priceFilter__container">
+            <h2>Definir preço</h2>
+            <p>Até R$ <span class="price"></span></p>
+          </div>
+          <input class="priceFilter__input" type="range" min="0" max="100" step="1" value="0">
+        </div>
+      </section>
+      <section class="filteredAlbuns__container">
+        <h2>Álbuns encontrados</h2>
+        <ul class="filteredAlbuns__list">
+        </ul>
+      </section>
+    </main>
+
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
+</html>
